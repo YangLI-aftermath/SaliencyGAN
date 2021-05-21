@@ -1,0 +1,78 @@
+TensorFlow 2.0 Upgrade Script
+-----------------------------
+Converted 4 files
+Detected 0 issues that require attention
+--------------------------------------------------------------------------------
+================================================================================
+Detailed log follows:
+
+================================================================================
+================================================================================
+Input tree: './util'
+================================================================================
+--------------------------------------------------------------------------------
+Processing file './util/metric_util.py'
+ outputting to 'util_v2/metric_util.py'
+--------------------------------------------------------------------------------
+
+5:10: INFO: Added keywords to args of function 'tf.reduce_mean'
+5:25: INFO: Renamed 'tf.log' to 'tf.math.log'
+12:12: INFO: Added keywords to args of function 'tf.reduce_sum'
+14:13: INFO: Renamed 'tf.where' to 'tf.compat.v1.where'
+14:41: INFO: Added keywords to args of function 'tf.shape'
+16:13: INFO: Added keywords to args of function 'tf.reduce_sum'
+17:13: INFO: Added keywords to args of function 'tf.reduce_sum'
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file './util/image_preprocessing_util.py'
+ outputting to 'util_v2/image_preprocessing_util.py'
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file './util/loss_util.py'
+ outputting to 'util_v2/loss_util.py'
+--------------------------------------------------------------------------------
+
+ERROR: Failed to parse.
+Traceback (most recent call last):
+  File "/Users/menglidaren/miniforge3/envs/tfenv/lib/python3.8/site-packages/tensorflow/tools/compatibility/ast_edits.py", line 940, in update_string_pasta
+    t = pasta.parse(text)
+  File "/Users/menglidaren/miniforge3/envs/tfenv/lib/python3.8/site-packages/pasta/__init__.py", line 23, in parse
+    t = ast_utils.parse(src)
+  File "/Users/menglidaren/miniforge3/envs/tfenv/lib/python3.8/site-packages/pasta/base/ast_utils.py", line 56, in parse
+    tree = ast.parse(sanitize_source(src))
+  File "/Users/menglidaren/miniforge3/envs/tfenv/lib/python3.8/ast.py", line 47, in parse
+    return compile(source, filename, mode, flags,
+  File "<unknown>", line 18
+    def
+       ^
+SyntaxError: invalid syntax
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file './util/network_util.py'
+ outputting to 'util_v2/network_util.py'
+--------------------------------------------------------------------------------
+
+ERROR: Failed to parse.
+Traceback (most recent call last):
+  File "/Users/menglidaren/miniforge3/envs/tfenv/lib/python3.8/site-packages/tensorflow/tools/compatibility/ast_edits.py", line 940, in update_string_pasta
+    t = pasta.parse(text)
+  File "/Users/menglidaren/miniforge3/envs/tfenv/lib/python3.8/site-packages/pasta/__init__.py", line 23, in parse
+    t = ast_utils.parse(src)
+  File "/Users/menglidaren/miniforge3/envs/tfenv/lib/python3.8/site-packages/pasta/base/ast_utils.py", line 56, in parse
+    tree = ast.parse(sanitize_source(src))
+  File "/Users/menglidaren/miniforge3/envs/tfenv/lib/python3.8/ast.py", line 47, in parse
+    return compile(source, filename, mode, flags,
+  File "<unknown>", line 83
+    with tf.variable_scope(scope,reuse=True)
+                                           ^
+SyntaxError: invalid syntax
+
+--------------------------------------------------------------------------------
+

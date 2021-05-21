@@ -10,16 +10,9 @@ This repository provides the implementation of SaliencyGAN in the following pape
 
 IEEE Transactions on Industial Informatics
 
-# Citation
-If you use Saliency for your research, please cite our paper:
-
-```
-@article{wang2019saliencygan,
-  title={Saliencygan: Deep learning semi-supervised salient object detection in the fog of iot},
-  author={Wang, Chengjia and Dong, Shizhou and Zhao, Xiaofeng and Papanastasiou, Giorgos and Zhang, Heye and Yang, Guang},
-  journal={IEEE Transactions on Industrial Informatics},
-  year={2019},
-  publisher={IEEE}
-}
-
-```
+# Tips: 
+* Util package added.
+* Some of loss functions are different from the paper: 
+  * Wasserstein Distance deprecated.
+  * Perceptual loss added.  
+  * Cycle loss added.
